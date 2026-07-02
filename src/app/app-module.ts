@@ -11,6 +11,7 @@ import { BindingDemo } from './binding-demo/binding-demo';
 import { FormsModule } from '@angular/forms';
 import { AlbumInfo } from './album-info/album-info';
 import { TestoCustomPipe } from './pipes/testo-custom-pipe';
+import { DirectiveExample } from './directives/directive-example';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { TestoCustomPipe } from './pipes/testo-custom-pipe';
     BindingDemo,
     AlbumInfo,
     TestoCustomPipe,
+    DirectiveExample,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideBrowserGlobalErrorListeners()],
