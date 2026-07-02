@@ -1,0 +1,15 @@
+<p>ONE WAY CLASS -> VIEW</p> <input [value]="testo">
+<p>{{testo}}</p>
+<br><br>
+<p>ONE WAY VIEW -> CLASS</p> <input (input)="aggiornaTesto($event.target.value)">
+<br>
+<p>{{testo1}}</p>
+<br><br>
+<p>TWO WAY CLASS <-> VIEW</p> <input (input)="aggiornaTesto2($event.target.value)"  [value]="testo2">
+<br>
+<p>{{testo2}}</p>
+<p>TWO WAY BINDING CLASS <-> VIEW</p> <input [(ngModel)]="twoWayText">
+<br><br>
+<p>{{twoWayText}}</p>
+<br><br>
+<p>{{testo1 | testoCustom: testo2}}</p>
