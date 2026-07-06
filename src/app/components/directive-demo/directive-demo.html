@@ -10,4 +10,16 @@
 <!--ALTRO MODO-->
 <p>Secondo modo</p><input (input)="salvaNumero($event.target.value)">
 <br><br>
-<p *ngIf="number1 >= 10">Paragrafo abilitato dal metodo 2</p>
+<p *ngIf="number1 >= 10">Paragrafo abilitato dal metodo 2 - If tradizionale</p>
+@if (number1 >= 10){
+    <p>Paragrafo abilitato dal metodo 2 - If nuova sintassi</p>
+}
+<br><br>
+
+
+<ul>
+  @for (brano of brani; track brano) {
+    
+    <li>{{ brano }}</li>
+  }
+  </ul>

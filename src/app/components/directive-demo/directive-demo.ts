@@ -10,6 +10,7 @@ export class DirectiveDemo {
 
   number = 0;
   number1 = 0;
+  brani = ['Brano 1', 'Brano 2', 'Brano 3', 'Brano 4', 'Brano 5'];
 
   abilitaInput(input: number){
     if(input >= 10){
