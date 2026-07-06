@@ -1,0 +1,13 @@
+<p appColore>Testo per direttiva Colore</p>
+<br>
+<p appFont>Testo per direttiva Font</p>
+<br>
+<p appSfondo appColore>Testo per direttiva sfondo</p>
+<br><br>
+<input [(ngModel)] = "number">
+<p *ngIf="abilitaInput(number)">Paragrafo abilitato</p>
+<br><br>
+<!--ALTRO MODO-->
+<p>Secondo modo</p><input (input)="salvaNumero($event.target.value)">
+<br><br>
+<p *ngIf="number1 >= 10">Paragrafo abilitato dal metodo 2</p>
